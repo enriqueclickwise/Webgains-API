@@ -6,7 +6,7 @@
 	$request_data = array (
 		'startdate' => $start_date,
 		'enddate' => $end_date,
-		'campaignid' => '',
+		'campaignid' => 282295,
 		'username' => $user,
 		'password' => $password,
 	);	
