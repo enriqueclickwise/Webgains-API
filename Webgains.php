@@ -6,11 +6,11 @@
 	$request_data = array (
 		'startdate' => $start_date,
 		'enddate' => $end_date,
-		'campaignid' => 282295,
+		'campaignid' => 180165,
 		'username' => $user,
 		'password' => $password,
 	);	
-	$wgurl = 'http://ws.webgains.com/aws.php';
+	$wgurl = 'https://ws.webgains.com/aws.php';
 	$client = new SoapClient($wgurl);
 	$functions = $client->__getFunctions();
 	// print_r($functions);
