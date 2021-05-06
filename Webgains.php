@@ -6,7 +6,7 @@
 	$request_data = array (
 		'startdate' => $start_date,
 		'enddate' => $end_date,
-		'campaignid' => 180165,
+		'campaignid' => 012345, //publisher id you should know as an int
 		'username' => $user,
 		'password' => $password,
 	);	
@@ -14,6 +14,6 @@
 	$client = new SoapClient($wgurl);
 	$functions = $client->__getFunctions();
 	// print_r($functions);
-	$transactions = $client->getFullEarningsWithCurrency($request_data);
+	$transactions = $client->getFullEarningsWithCurrency($request_data['startdate'], $request_data['enddate'], $request_data['campaignid'], $request_data['username'], $request_data['password']);
 	print_r($transactions);
 ?>
